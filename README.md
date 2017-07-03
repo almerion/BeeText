@@ -1,2 +1,2 @@
 # BeeText
-Basic text editor application for windows 10.
+Basic text editor for windows 10.
