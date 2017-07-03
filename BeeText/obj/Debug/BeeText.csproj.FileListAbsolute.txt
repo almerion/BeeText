@@ -1,0 +1,9 @@
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\bin\Debug\BeeText.exe.config
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\bin\Debug\BeeText.exe
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\bin\Debug\BeeText.pdb
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\obj\Debug\BeeText.csprojResolveAssemblyReference.cache
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\obj\Debug\BeeText.BeeTextForm.resources
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\obj\Debug\BeeText.Properties.Resources.resources
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\obj\Debug\BeeText.csproj.GenerateResource.Cache
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\obj\Debug\BeeText.exe
+c:\users\heari\documents\visual studio 2017\Projects\BeeText\BeeText\obj\Debug\BeeText.pdb
