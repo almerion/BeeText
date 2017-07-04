@@ -58,9 +58,11 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lineStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.columnStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lineStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.columnStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.letterStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.wordStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -186,37 +188,37 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.undoToolStripMenuItem.Text = "Undo";
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(146, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem2.Text = "Copy";
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.selectAllToolStripMenuItem.Text = "Select All";
             // 
             // settingsToolStripMenuItem
@@ -270,32 +272,47 @@
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lineStatusLabel,
-            this.toolStripStatusLabel1,
-            this.columnStatusLabel});
+            this.lineStripStatusLabel,
+            this.toolStripStatusLabel,
+            this.columnStripStatusLabel,
+            this.letterStripStatusLabel,
+            this.wordStripStatusLabel});
             this.statusStrip1.Location = new System.Drawing.Point(0, 622);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(723, 25);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // lineStatusLabel
+            // lineStripStatusLabel
             // 
-            this.lineStatusLabel.Name = "lineStatusLabel";
-            this.lineStatusLabel.Size = new System.Drawing.Size(36, 20);
-            this.lineStatusLabel.Text = "Line";
+            this.lineStripStatusLabel.Name = "lineStripStatusLabel";
+            this.lineStripStatusLabel.Size = new System.Drawing.Size(36, 20);
+            this.lineStripStatusLabel.Text = "Line";
             // 
-            // columnStatusLabel
+            // columnStripStatusLabel
             // 
-            this.columnStatusLabel.Name = "columnStatusLabel";
-            this.columnStatusLabel.Size = new System.Drawing.Size(60, 20);
-            this.columnStatusLabel.Text = "Column";
+            this.columnStripStatusLabel.Name = "columnStripStatusLabel";
+            this.columnStripStatusLabel.Size = new System.Drawing.Size(60, 20);
+            this.columnStripStatusLabel.Text = "Column";
             // 
-            // toolStripStatusLabel1
+            // toolStripStatusLabel
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(13, 20);
-            this.toolStripStatusLabel1.Text = "|";
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(13, 20);
+            this.toolStripStatusLabel.Text = "|";
+            // 
+            // letterStripStatusLabel
+            // 
+            this.letterStripStatusLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.letterStripStatusLabel.Name = "letterStripStatusLabel";
+            this.letterStripStatusLabel.Size = new System.Drawing.Size(47, 20);
+            this.letterStripStatusLabel.Text = "Letter";
+            // 
+            // wordStripStatusLabel
+            // 
+            this.wordStripStatusLabel.Name = "wordStripStatusLabel";
+            this.wordStripStatusLabel.Size = new System.Drawing.Size(45, 20);
+            this.wordStripStatusLabel.Text = "Word";
             // 
             // BeeTextForm
             // 
@@ -351,9 +368,11 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.ToolStripStatusLabel lineStatusLabel;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel columnStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel lineStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel columnStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel letterStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel wordStripStatusLabel;
     }
 }
 
