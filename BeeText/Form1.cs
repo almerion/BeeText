@@ -14,6 +14,7 @@ namespace BeeText
 {
     public partial class BeeTextForm : Form
     {
+
         public BeeTextForm()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace BeeText
         //menu bar
         //
 
+        
         //open
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -114,6 +116,73 @@ namespace BeeText
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void fullScreenToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            colorDialog.AllowFullOpen = false;
+            colorDialog.ShowHelp = false;
+            colorDialog.Color = textBoxArea.ForeColor;
+            textBoxArea.Focus();
+
+            if(colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                string stringSelectedText = textBoxArea.SelectedText;
+                textBoxArea. = colorDialog.Color;
+            }
+        }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+            fontDialog.ShowColor = true;
+
+            if(fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                textBoxArea.Font = fontDialog.Font;
+                textBoxArea.ForeColor = fontDialog.Color;
+            }
+        }
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(textBoxArea.SelectedText.Length > 0) { textBoxArea.Cut(); }
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if(textBoxArea.SelectedText.Length > 0) { textBoxArea.Copy(); }
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.GetDataObject().GetDataPresent(DataFormats.Text))
+            {
+                if(textBoxArea.SelectedText.Length > 0)
+                {
+                    textBoxArea.SelectionStart = textBoxArea.SelectionStart + textBoxArea.SelectionLength;
+                }
+
+                textBoxArea.Paste();
+            }
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (textBoxArea.CanUndo) { textBoxArea.Undo(); textBoxArea.ClearUndo(); }
+        }
+
+        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBoxArea.SelectAll();
+            textBoxArea.Focus();
         }
     }
 }
