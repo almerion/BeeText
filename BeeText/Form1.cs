@@ -134,8 +134,7 @@ namespace BeeText
 
             if(colorDialog.ShowDialog() == DialogResult.OK)
             {
-                string stringSelectedText = textBoxArea.SelectedText;
-                textBoxArea. = colorDialog.Color;
+                textBoxArea.ForeColor = colorDialog.Color;
             }
         }
 
@@ -183,6 +182,26 @@ namespace BeeText
         {
             textBoxArea.SelectAll();
             textBoxArea.Focus();
+        }
+
+        private void matrixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //textbox and text 
+            textBoxArea.BackColor = Color.Black;
+            textBoxArea.ForeColor = Color.Green;
+
+            
+        }
+
+        private void nightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBoxArea.BackColor = Color.Black;
+            textBoxArea.ForeColor = Color.White;
+        }
+
+        private void germanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

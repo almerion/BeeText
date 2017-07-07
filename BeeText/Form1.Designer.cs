@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BeeTextForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.beeTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fullScreenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,6 +66,15 @@
             this.columnStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.letterStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.wordStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.matrixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ıtalianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.españolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sdafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -99,14 +109,14 @@
             // fullScreenToolStripMenuItem1
             // 
             this.fullScreenToolStripMenuItem1.Name = "fullScreenToolStripMenuItem1";
-            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(155, 26);
+            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
             this.fullScreenToolStripMenuItem1.Text = "Full Screen";
             this.fullScreenToolStripMenuItem1.Click += new System.EventHandler(this.fullScreenToolStripMenuItem1_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.searchToolStripMenuItem.Text = "Search";
             // 
             // fileToolStripMenuItem
@@ -188,14 +198,14 @@
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.colorToolStripMenuItem.Text = "Color";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.fontToolStripMenuItem.Text = "Font";
             this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
@@ -257,21 +267,32 @@
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.languageToolStripMenuItem,
-            this.themesToolStripMenuItem});
+            this.themesToolStripMenuItem,
+            this.encodingToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // languageToolStripMenuItem
             // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.frenchToolStripMenuItem,
+            this.germanToolStripMenuItem,
+            this.ıtalianoToolStripMenuItem,
+            this.españolToolStripMenuItem,
+            this.sdafToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
-            this.languageToolStripMenuItem.Text = "Language";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.languageToolStripMenuItem.Text = "Languages";
             // 
             // themesToolStripMenuItem
             // 
+            this.themesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.matrixToolStripMenuItem,
+            this.nightToolStripMenuItem});
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
-            this.themesToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
+            this.themesToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.themesToolStripMenuItem.Text = "Themes";
             // 
             // aboutToolStripMenuItem
@@ -288,6 +309,7 @@
             // 
             this.textBoxArea.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.textBoxArea.Location = new System.Drawing.Point(0, 28);
             this.textBoxArea.Multiline = true;
             this.textBoxArea.Name = "textBoxArea";
@@ -340,6 +362,63 @@
             this.wordStripStatusLabel.Size = new System.Drawing.Size(45, 20);
             this.wordStripStatusLabel.Text = "Word";
             // 
+            // matrixToolStripMenuItem
+            // 
+            this.matrixToolStripMenuItem.Name = "matrixToolStripMenuItem";
+            this.matrixToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.matrixToolStripMenuItem.Text = "Matrix";
+            this.matrixToolStripMenuItem.Click += new System.EventHandler(this.matrixToolStripMenuItem_Click);
+            // 
+            // nightToolStripMenuItem
+            // 
+            this.nightToolStripMenuItem.Name = "nightToolStripMenuItem";
+            this.nightToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.nightToolStripMenuItem.Text = "Night";
+            this.nightToolStripMenuItem.Click += new System.EventHandler(this.nightToolStripMenuItem_Click);
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.englishToolStripMenuItem.Text = "English";
+            // 
+            // frenchToolStripMenuItem
+            // 
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.frenchToolStripMenuItem.Text = "Français";
+            // 
+            // germanToolStripMenuItem
+            // 
+            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
+            this.germanToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.germanToolStripMenuItem.Text = "Deutsche";
+            this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
+            // 
+            // ıtalianoToolStripMenuItem
+            // 
+            this.ıtalianoToolStripMenuItem.Name = "ıtalianoToolStripMenuItem";
+            this.ıtalianoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.ıtalianoToolStripMenuItem.Text = "Italiano";
+            // 
+            // españolToolStripMenuItem
+            // 
+            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
+            this.españolToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.españolToolStripMenuItem.Text = "Español";
+            // 
+            // sdafToolStripMenuItem
+            // 
+            this.sdafToolStripMenuItem.Name = "sdafToolStripMenuItem";
+            this.sdafToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.sdafToolStripMenuItem.Text = "Türkçe";
+            // 
+            // encodingToolStripMenuItem
+            // 
+            this.encodingToolStripMenuItem.Name = "encodingToolStripMenuItem";
+            this.encodingToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.encodingToolStripMenuItem.Text = "Encoding";
+            // 
             // BeeTextForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -349,6 +428,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.textBoxArea);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BeeTextForm";
             this.Text = "BeeText";
@@ -401,6 +481,15 @@
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matrixToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ıtalianoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem españolToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sdafToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem encodingToolStripMenuItem;
     }
 }
 
