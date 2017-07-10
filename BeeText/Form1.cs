@@ -201,7 +201,38 @@ namespace BeeText
 
         private void germanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            //beetext
+            this.fullScreenToolStripMenuItem1.Text = "Vollbild";
+            this.searchToolStripMenuItem.Text = "Suche";
+            //File
+            this.fileToolStripMenuItem.Text = "Datei";
+            this.newToolStripMenuItem.Text = "Neu";
+            this.openToolStripMenuItem.Text = "öffnen";
+            this.openFileLocationToolStripMenuItem.Text = "Offene Dateistelle";
+            this.saveToolStripMenuItem.Text = "Sparen";
+            this.saveAsToolStripMenuItem.Text = "Speichern Als";
+            this.renameToolStripMenuItem.Text = "Umbenennen";
+            this.closeToolStripMenuItem.Text = "Schließen";
+            this.deleteFileToolStripMenuItem.Text = "Datei Löschen";
+            //text
+            this.textToolStripMenuItem.Text = "Text";
+            this.colorToolStripMenuItem.Text = "Farbe";
+            this.fontToolStripMenuItem.Text = "Schriftart";
+            //edit
+            this.editToolStripMenuItem.Text = "Bearbeiten";
+            this.undoToolStripMenuItem.Text = "Rückgängig Machen";
+            this.cutToolStripMenuItem.Text = "Schneiden";
+            this.copyToolStripMenuItem.Text = "Kopieren";
+            this.pasteToolStripMenuItem.Text = "Paste";
+            this.deleteToolStripMenuItem.Text = "Löschen";
+            this.selectAllToolStripMenuItem.Text = "Alles Auswählen";
+            //settings
+            this.settingsToolStripMenuItem.Text = "Einstellungen";
+            this.languageToolStripMenuItem.Text = "Sprache";
+            this.themesToolStripMenuItem.Text = "Themen";
+            this.encodingToolStripMenuItem.Text = "Codierung";
+            //about
+            this.aboutToolStripMenuItem.Text = "Über";
         }
 
         private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
