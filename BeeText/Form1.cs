@@ -271,5 +271,41 @@ namespace BeeText
             this.aboutToolStripMenuItem.Text = "Sur";
             
         }
+
+        private void ıtalianoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //beetext
+            this.fullScreenToolStripMenuItem1.Text = "A Schermo Intero";
+            this.searchToolStripMenuItem.Text = "Ricerca";
+            //File
+            this.fileToolStripMenuItem.Text = "File";
+            this.newToolStripMenuItem.Text = "Nuovo";
+            this.openToolStripMenuItem.Text = "Aperto";
+            this.openFileLocationToolStripMenuItem.Text = "Aprire Destinazione File";
+            this.saveToolStripMenuItem.Text = "Salvare";
+            this.saveAsToolStripMenuItem.Text = "Salva Come...";
+            this.renameToolStripMenuItem.Text = "Rinominare";
+            this.closeToolStripMenuItem.Text = "Vicino";
+            this.deleteFileToolStripMenuItem.Text = "Cancella Il File";
+            //text
+            this.textToolStripMenuItem.Text = "Testo";
+            this.colorToolStripMenuItem.Text = "Colore";
+            this.fontToolStripMenuItem.Text = "Font";
+            //edit
+            this.editToolStripMenuItem.Text = "Modifica";
+            this.undoToolStripMenuItem.Text = "Disfare";
+            this.cutToolStripMenuItem.Text = "Tagliare";
+            this.copyToolStripMenuItem.Text = "Copia";
+            this.pasteToolStripMenuItem.Text = "Incolla";
+            this.deleteToolStripMenuItem.Text = "Elimina";
+            this.selectAllToolStripMenuItem.Text = "Seleziona Tutto";
+            //settings
+            this.settingsToolStripMenuItem.Text = "Impostazioni";
+            this.languageToolStripMenuItem.Text = "Lingua";
+            this.themesToolStripMenuItem.Text = "Temi";
+            this.encodingToolStripMenuItem.Text = "Codifica";
+            //about
+            this.aboutToolStripMenuItem.Text = "Di";
+        }
     }
 }

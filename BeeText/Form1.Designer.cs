@@ -57,7 +57,7 @@
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ıtalianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.italianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.españolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sdafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -109,14 +109,14 @@
             // fullScreenToolStripMenuItem1
             // 
             this.fullScreenToolStripMenuItem1.Name = "fullScreenToolStripMenuItem1";
-            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(155, 26);
             this.fullScreenToolStripMenuItem1.Text = "Full Screen";
             this.fullScreenToolStripMenuItem1.Click += new System.EventHandler(this.fullScreenToolStripMenuItem1_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.searchToolStripMenuItem.Text = "Search";
             // 
             // fileToolStripMenuItem
@@ -198,14 +198,14 @@
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
             this.colorToolStripMenuItem.Text = "Color";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
             this.fontToolStripMenuItem.Text = "Font";
             this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
@@ -225,41 +225,41 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.selectAllToolStripMenuItem.Text = "Select All";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
@@ -279,7 +279,7 @@
             this.englishToolStripMenuItem,
             this.frenchToolStripMenuItem,
             this.germanToolStripMenuItem,
-            this.ıtalianoToolStripMenuItem,
+            this.italianoToolStripMenuItem,
             this.españolToolStripMenuItem,
             this.sdafToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
@@ -306,11 +306,12 @@
             this.germanToolStripMenuItem.Text = "Deutsche";
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
             // 
-            // ıtalianoToolStripMenuItem
+            // italianoToolStripMenuItem
             // 
-            this.ıtalianoToolStripMenuItem.Name = "ıtalianoToolStripMenuItem";
-            this.ıtalianoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.ıtalianoToolStripMenuItem.Text = "Italiano";
+            this.italianoToolStripMenuItem.Name = "italianoToolStripMenuItem";
+            this.italianoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.italianoToolStripMenuItem.Text = "Italiano";
+            this.italianoToolStripMenuItem.Click += new System.EventHandler(this.ıtalianoToolStripMenuItem_Click);
             // 
             // españolToolStripMenuItem
             // 
@@ -487,7 +488,7 @@
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ıtalianoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem italianoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem españolToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sdafToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem encodingToolStripMenuItem;
