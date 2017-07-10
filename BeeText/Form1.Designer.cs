@@ -54,7 +54,16 @@
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ıtalianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.españolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sdafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matrixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.textBoxArea = new System.Windows.Forms.TextBox();
@@ -66,15 +75,6 @@
             this.columnStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.letterStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.wordStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.matrixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ıtalianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.españolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sdafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.encodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -286,6 +286,44 @@
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.languageToolStripMenuItem.Text = "Languages";
             // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.englishToolStripMenuItem.Text = "English";
+            // 
+            // frenchToolStripMenuItem
+            // 
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.frenchToolStripMenuItem.Text = "Français";
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
+            // 
+            // germanToolStripMenuItem
+            // 
+            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
+            this.germanToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.germanToolStripMenuItem.Text = "Deutsche";
+            this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
+            // 
+            // ıtalianoToolStripMenuItem
+            // 
+            this.ıtalianoToolStripMenuItem.Name = "ıtalianoToolStripMenuItem";
+            this.ıtalianoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.ıtalianoToolStripMenuItem.Text = "Italiano";
+            // 
+            // españolToolStripMenuItem
+            // 
+            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
+            this.españolToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.españolToolStripMenuItem.Text = "Español";
+            // 
+            // sdafToolStripMenuItem
+            // 
+            this.sdafToolStripMenuItem.Name = "sdafToolStripMenuItem";
+            this.sdafToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.sdafToolStripMenuItem.Text = "Türkçe";
+            // 
             // themesToolStripMenuItem
             // 
             this.themesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -294,6 +332,26 @@
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
             this.themesToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.themesToolStripMenuItem.Text = "Themes";
+            // 
+            // matrixToolStripMenuItem
+            // 
+            this.matrixToolStripMenuItem.Name = "matrixToolStripMenuItem";
+            this.matrixToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
+            this.matrixToolStripMenuItem.Text = "Matrix";
+            this.matrixToolStripMenuItem.Click += new System.EventHandler(this.matrixToolStripMenuItem_Click);
+            // 
+            // nightToolStripMenuItem
+            // 
+            this.nightToolStripMenuItem.Name = "nightToolStripMenuItem";
+            this.nightToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
+            this.nightToolStripMenuItem.Text = "Night";
+            this.nightToolStripMenuItem.Click += new System.EventHandler(this.nightToolStripMenuItem_Click);
+            // 
+            // encodingToolStripMenuItem
+            // 
+            this.encodingToolStripMenuItem.Name = "encodingToolStripMenuItem";
+            this.encodingToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.encodingToolStripMenuItem.Text = "Encoding";
             // 
             // aboutToolStripMenuItem
             // 
@@ -361,63 +419,6 @@
             this.wordStripStatusLabel.Name = "wordStripStatusLabel";
             this.wordStripStatusLabel.Size = new System.Drawing.Size(45, 20);
             this.wordStripStatusLabel.Text = "Word";
-            // 
-            // matrixToolStripMenuItem
-            // 
-            this.matrixToolStripMenuItem.Name = "matrixToolStripMenuItem";
-            this.matrixToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.matrixToolStripMenuItem.Text = "Matrix";
-            this.matrixToolStripMenuItem.Click += new System.EventHandler(this.matrixToolStripMenuItem_Click);
-            // 
-            // nightToolStripMenuItem
-            // 
-            this.nightToolStripMenuItem.Name = "nightToolStripMenuItem";
-            this.nightToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.nightToolStripMenuItem.Text = "Night";
-            this.nightToolStripMenuItem.Click += new System.EventHandler(this.nightToolStripMenuItem_Click);
-            // 
-            // englishToolStripMenuItem
-            // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.englishToolStripMenuItem.Text = "English";
-            // 
-            // frenchToolStripMenuItem
-            // 
-            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.frenchToolStripMenuItem.Text = "Français";
-            // 
-            // germanToolStripMenuItem
-            // 
-            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            this.germanToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.germanToolStripMenuItem.Text = "Deutsche";
-            this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
-            // 
-            // ıtalianoToolStripMenuItem
-            // 
-            this.ıtalianoToolStripMenuItem.Name = "ıtalianoToolStripMenuItem";
-            this.ıtalianoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.ıtalianoToolStripMenuItem.Text = "Italiano";
-            // 
-            // españolToolStripMenuItem
-            // 
-            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
-            this.españolToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.españolToolStripMenuItem.Text = "Español";
-            // 
-            // sdafToolStripMenuItem
-            // 
-            this.sdafToolStripMenuItem.Name = "sdafToolStripMenuItem";
-            this.sdafToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.sdafToolStripMenuItem.Text = "Türkçe";
-            // 
-            // encodingToolStripMenuItem
-            // 
-            this.encodingToolStripMenuItem.Name = "encodingToolStripMenuItem";
-            this.encodingToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.encodingToolStripMenuItem.Text = "Encoding";
             // 
             // BeeTextForm
             // 
