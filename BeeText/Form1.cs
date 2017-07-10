@@ -343,5 +343,77 @@ namespace BeeText
             //about
             this.aboutToolStripMenuItem.Text = "Sobre";
         }
+
+        private void sdafToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //beetext
+            this.fullScreenToolStripMenuItem1.Text = "Tam Ekran";
+            this.searchToolStripMenuItem.Text = "Ara";
+            //File
+            this.fileToolStripMenuItem.Text = "Dosya";
+            this.newToolStripMenuItem.Text = "Yeni";
+            this.openToolStripMenuItem.Text = "Aç";
+            this.openFileLocationToolStripMenuItem.Text = "Dosya Konumunu Aç";
+            this.saveToolStripMenuItem.Text = "Kaydet";
+            this.saveAsToolStripMenuItem.Text = "Farklı Kaydet...";
+            this.renameToolStripMenuItem.Text = "Yeniden Adlandır";
+            this.closeToolStripMenuItem.Text = "Kapat";
+            this.deleteFileToolStripMenuItem.Text = "Dosya Sil";
+            //text
+            this.textToolStripMenuItem.Text = "Metin";
+            this.colorToolStripMenuItem.Text = "Renk";
+            this.fontToolStripMenuItem.Text = "Yazı tipi";
+            //edit
+            this.editToolStripMenuItem.Text = "Düzenle";
+            this.undoToolStripMenuItem.Text = "Geri Al";
+            this.cutToolStripMenuItem.Text = "Kes";
+            this.copyToolStripMenuItem.Text = "Kopyala";
+            this.pasteToolStripMenuItem.Text = "Yapıştır";
+            this.deleteToolStripMenuItem.Text = "Sil";
+            this.selectAllToolStripMenuItem.Text = "Hepsini Seç";
+            //settings
+            this.settingsToolStripMenuItem.Text = "Ayarlar";
+            this.languageToolStripMenuItem.Text = "Dil";
+            this.themesToolStripMenuItem.Text = "Temelar";
+            this.encodingToolStripMenuItem.Text = "Kodlama";
+            //about
+            this.aboutToolStripMenuItem.Text = "Hakkında";
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //beetext
+            this.fullScreenToolStripMenuItem1.Text = "Full Screen";
+            this.searchToolStripMenuItem.Text = "Search";
+            //File
+            this.fileToolStripMenuItem.Text = "File";
+            this.newToolStripMenuItem.Text = "New";
+            this.openToolStripMenuItem.Text = "Open";
+            this.openFileLocationToolStripMenuItem.Text = "Open File Location";
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveAsToolStripMenuItem.Text = "Save As...";
+            this.renameToolStripMenuItem.Text = "Rename";
+            this.closeToolStripMenuItem.Text = "Close";
+            this.deleteFileToolStripMenuItem.Text = "Delete File";
+            //text
+            this.textToolStripMenuItem.Text = "Text";
+            this.colorToolStripMenuItem.Text = "Color";
+            this.fontToolStripMenuItem.Text = "Font";
+            //edit
+            this.editToolStripMenuItem.Text = "Edit";
+            this.undoToolStripMenuItem.Text = "Undo";
+            this.cutToolStripMenuItem.Text = "Cut";
+            this.copyToolStripMenuItem.Text = "Copy";
+            this.pasteToolStripMenuItem.Text = "Paste";
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.selectAllToolStripMenuItem.Text = "Select All";
+            //settings
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.languageToolStripMenuItem.Text = "Language";
+            this.themesToolStripMenuItem.Text = "Themes";
+            this.encodingToolStripMenuItem.Text = "Encoding";
+            //about
+            this.aboutToolStripMenuItem.Text = "About";
+        }
     }
 }

@@ -291,6 +291,7 @@
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.englishToolStripMenuItem.Text = "English";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
@@ -325,6 +326,7 @@
             this.sdafToolStripMenuItem.Name = "sdafToolStripMenuItem";
             this.sdafToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.sdafToolStripMenuItem.Text = "Türkçe";
+            this.sdafToolStripMenuItem.Click += new System.EventHandler(this.sdafToolStripMenuItem_Click);
             // 
             // themesToolStripMenuItem
             // 
