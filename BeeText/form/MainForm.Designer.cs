@@ -1,6 +1,6 @@
 ﻿namespace BeeText
 {
-    partial class BeeTextForm
+    partial class BeeTextForm : 
     {
         /// <summary>
         /// Required designer variable.
@@ -69,15 +69,8 @@
             this.textBoxArea = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lineStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.columnStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.letterStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.wordStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -109,14 +102,14 @@
             // fullScreenToolStripMenuItem1
             // 
             this.fullScreenToolStripMenuItem1.Name = "fullScreenToolStripMenuItem1";
-            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(155, 26);
             this.fullScreenToolStripMenuItem1.Text = "Full Screen";
             this.fullScreenToolStripMenuItem1.Click += new System.EventHandler(this.fullScreenToolStripMenuItem1_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
@@ -379,59 +372,12 @@
             this.textBoxArea.Size = new System.Drawing.Size(723, 619);
             this.textBoxArea.TabIndex = 1;
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lineStripStatusLabel,
-            this.toolStripStatusLabel,
-            this.columnStripStatusLabel,
-            this.letterStripStatusLabel,
-            this.wordStripStatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 622);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(723, 25);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // lineStripStatusLabel
-            // 
-            this.lineStripStatusLabel.Name = "lineStripStatusLabel";
-            this.lineStripStatusLabel.Size = new System.Drawing.Size(36, 20);
-            this.lineStripStatusLabel.Text = "Line";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(13, 20);
-            this.toolStripStatusLabel.Text = "|";
-            // 
-            // columnStripStatusLabel
-            // 
-            this.columnStripStatusLabel.Name = "columnStripStatusLabel";
-            this.columnStripStatusLabel.Size = new System.Drawing.Size(60, 20);
-            this.columnStripStatusLabel.Text = "Column";
-            // 
-            // letterStripStatusLabel
-            // 
-            this.letterStripStatusLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.letterStripStatusLabel.Name = "letterStripStatusLabel";
-            this.letterStripStatusLabel.Size = new System.Drawing.Size(47, 20);
-            this.letterStripStatusLabel.Text = "Letter";
-            // 
-            // wordStripStatusLabel
-            // 
-            this.wordStripStatusLabel.Name = "wordStripStatusLabel";
-            this.wordStripStatusLabel.Size = new System.Drawing.Size(45, 20);
-            this.wordStripStatusLabel.Text = "Word";
-            // 
             // BeeTextForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(723, 647);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.textBoxArea);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -441,8 +387,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,13 +421,7 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem themesToolStripMenuItem;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.ToolStripStatusLabel lineStripStatusLabel;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
-        private System.Windows.Forms.ToolStripStatusLabel columnStripStatusLabel;
-        private System.Windows.Forms.ToolStripStatusLabel letterStripStatusLabel;
-        private System.Windows.Forms.ToolStripStatusLabel wordStripStatusLabel;
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;

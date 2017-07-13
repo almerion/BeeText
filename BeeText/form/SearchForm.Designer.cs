@@ -1,6 +1,6 @@
 ﻿namespace BeeText.form
 {
-    partial class searchForm
+    public partial class searchForm 
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@
             this.searchTextBox.Size = new System.Drawing.Size(203, 22);
             this.searchTextBox.TabIndex = 0;
             this.searchTextBox.Text = "Search";
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // searchButton
             // 

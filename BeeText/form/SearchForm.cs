@@ -16,5 +16,10 @@ namespace BeeText.form
         {
             InitializeComponent();
         }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

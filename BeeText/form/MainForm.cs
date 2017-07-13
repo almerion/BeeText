@@ -418,8 +418,11 @@ namespace BeeText
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form searchForm = new Form();
-            searchForm.ShowDialog();
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
