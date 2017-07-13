@@ -1,6 +1,6 @@
 ﻿namespace BeeText
 {
-    partial class BeeTextForm : 
+    partial class BeeTextForm  
     {
         /// <summary>
         /// Required designer variable.

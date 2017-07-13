@@ -16,3 +16,4 @@ C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.csproj.GenerateRes
 C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.exe
 C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.pdb
 C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.csprojResolveAssemblyReference.cache
+C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.searchForm.resources
