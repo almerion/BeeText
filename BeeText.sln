@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeText", "BeeText\BeeText.csproj", "{08E5A9E8-75F3-48C2-BC70-8C4510871ED2}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BeeTextSetup", "Setup1\Setup1.vdproj", "{94355C5D-CCC8-44EB-8A98-DABF43CED417}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BeeTextSetup", "BeeTextSetup\BeeTextSetup.vdproj", "{72B5DEBA-D661-4FD0-B4B9-9120291D48C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{08E5A9E8-75F3-48C2-BC70-8C4510871ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E5A9E8-75F3-48C2-BC70-8C4510871ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E5A9E8-75F3-48C2-BC70-8C4510871ED2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94355C5D-CCC8-44EB-8A98-DABF43CED417}.Debug|Any CPU.ActiveCfg = Debug
-		{94355C5D-CCC8-44EB-8A98-DABF43CED417}.Release|Any CPU.ActiveCfg = Release
+		{72B5DEBA-D661-4FD0-B4B9-9120291D48C8}.Debug|Any CPU.ActiveCfg = Debug
+		{72B5DEBA-D661-4FD0-B4B9-9120291D48C8}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
