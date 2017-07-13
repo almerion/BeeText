@@ -109,15 +109,16 @@
             // fullScreenToolStripMenuItem1
             // 
             this.fullScreenToolStripMenuItem1.Name = "fullScreenToolStripMenuItem1";
-            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(155, 26);
+            this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
             this.fullScreenToolStripMenuItem1.Text = "Full Screen";
             this.fullScreenToolStripMenuItem1.Click += new System.EventHandler(this.fullScreenToolStripMenuItem1_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -283,48 +284,48 @@
             this.españolToolStripMenuItem,
             this.sdafToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.languageToolStripMenuItem.Text = "Languages";
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.frenchToolStripMenuItem.Text = "Français";
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            this.germanToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.germanToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.germanToolStripMenuItem.Text = "Deutsche";
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
             // 
             // italianoToolStripMenuItem
             // 
             this.italianoToolStripMenuItem.Name = "italianoToolStripMenuItem";
-            this.italianoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.italianoToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.italianoToolStripMenuItem.Text = "Italiano";
             this.italianoToolStripMenuItem.Click += new System.EventHandler(this.ıtalianoToolStripMenuItem_Click);
             // 
             // españolToolStripMenuItem
             // 
             this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
-            this.españolToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.españolToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.españolToolStripMenuItem.Text = "Español";
             this.españolToolStripMenuItem.Click += new System.EventHandler(this.españolToolStripMenuItem_Click);
             // 
             // sdafToolStripMenuItem
             // 
             this.sdafToolStripMenuItem.Name = "sdafToolStripMenuItem";
-            this.sdafToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.sdafToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.sdafToolStripMenuItem.Text = "Türkçe";
             this.sdafToolStripMenuItem.Click += new System.EventHandler(this.sdafToolStripMenuItem_Click);
             // 
@@ -334,7 +335,7 @@
             this.matrixToolStripMenuItem,
             this.nightToolStripMenuItem});
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
-            this.themesToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.themesToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.themesToolStripMenuItem.Text = "Themes";
             // 
             // matrixToolStripMenuItem
@@ -354,7 +355,7 @@
             // encodingToolStripMenuItem
             // 
             this.encodingToolStripMenuItem.Name = "encodingToolStripMenuItem";
-            this.encodingToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.encodingToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.encodingToolStripMenuItem.Text = "Encoding";
             // 
             // aboutToolStripMenuItem
@@ -497,4 +498,3 @@
         private System.Windows.Forms.ToolStripMenuItem encodingToolStripMenuItem;
     }
 }
-

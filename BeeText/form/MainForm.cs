@@ -415,5 +415,11 @@ namespace BeeText
             //about
             this.aboutToolStripMenuItem.Text = "About";
         }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form searchForm = new Form();
+            searchForm.ShowDialog();
+        }
     }
 }
