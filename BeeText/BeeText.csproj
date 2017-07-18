@@ -95,6 +95,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="form\BinarytoHexForm.resx">
+      <DependentUpon>BinarytoHexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\BinaryToTextForm.resx">
+      <DependentUpon>BinaryToTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\HexToBinaryForm.resx">
+      <DependentUpon>HexToBinaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\IntegerToTextForm.resx">
+      <DependentUpon>IntegerToTextForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\TextToBinaryForm.resx">
       <DependentUpon>TextToBinaryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\TextToIntegerForm.resx">
+      <DependentUpon>TextToIntegerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

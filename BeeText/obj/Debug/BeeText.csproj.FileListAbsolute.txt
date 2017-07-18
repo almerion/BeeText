@@ -18,3 +18,8 @@ C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.searchForm.re
 C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.csprojResolveAssemblyReference.cache
 C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.textToBinaryForm.resources
 C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.MainForm.resources
+C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.BinarytoHexForm.resources
+C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.BinaryToTextForm.resources
+C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.HexToBinaryForm.resources
+C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.IntegerToTextForm.resources
+C:\Users\heari\Source\Repos\BeeText\BeeText\obj\Debug\BeeText.form.TextToIntegerForm.resources

@@ -231,6 +231,8 @@ namespace BeeText
             this.pasteToolStripMenuItem.Text = "Paste";
             this.deleteToolStripMenuItem.Text = "Löschen";
             this.selectAllToolStripMenuItem.Text = "Alles Auswählen";
+            //convert
+            this.convertToolStripMenuItem.Text = "Konvertieren";
             //settings
             this.settingsToolStripMenuItem.Text = "Einstellungen";
             this.languageToolStripMenuItem.Text = "Sprache";
@@ -269,6 +271,8 @@ namespace BeeText
             this.pasteToolStripMenuItem.Text = "Coller";
             this.deleteToolStripMenuItem.Text = "Effacer";
             this.selectAllToolStripMenuItem.Text = "Tout Sélectionner";
+            //convert
+            this.convertToolStripMenuItem.Text = "Convertir";
             //settings
             this.settingsToolStripMenuItem.Text = "Paramètres";
             this.languageToolStripMenuItem.Text = "Les langues";
@@ -309,6 +313,8 @@ namespace BeeText
             this.pasteToolStripMenuItem.Text = "Incolla";
             this.deleteToolStripMenuItem.Text = "Elimina";
             this.selectAllToolStripMenuItem.Text = "Seleziona Tutto";
+            //convert
+            this.convertToolStripMenuItem.Text = "Convertire";
             //settings
             this.settingsToolStripMenuItem.Text = "Impostazioni";
             this.languageToolStripMenuItem.Text = "Lingua";
@@ -348,6 +354,8 @@ namespace BeeText
             this.pasteToolStripMenuItem.Text = "Pegar";
             this.deleteToolStripMenuItem.Text = "Borrar";
             this.selectAllToolStripMenuItem.Text = "Seleccionar Todo";
+            //convert
+            this.convertToolStripMenuItem.Text = "Convertir";
             //settings
             this.settingsToolStripMenuItem.Text = "Ajustes";
             this.languageToolStripMenuItem.Text = "Idioma";
@@ -388,6 +396,8 @@ namespace BeeText
             this.pasteToolStripMenuItem.Text = "Yapıştır";
             this.deleteToolStripMenuItem.Text = "Sil";
             this.selectAllToolStripMenuItem.Text = "Hepsini Seç";
+            //convert
+            this.convertToolStripMenuItem.Text = "Çevir";
             //settings
             this.settingsToolStripMenuItem.Text = "Ayarlar";
             this.languageToolStripMenuItem.Text = "Dil";
@@ -426,6 +436,8 @@ namespace BeeText
             this.pasteToolStripMenuItem.Text = "Paste";
             this.deleteToolStripMenuItem.Text = "Delete";
             this.selectAllToolStripMenuItem.Text = "Select All";
+            //convert
+            this.convertToolStripMenuItem.Text = "Convert";
             //settings
             this.settingsToolStripMenuItem.Text = "Settings";
             this.languageToolStripMenuItem.Text = "Language";
@@ -448,7 +460,8 @@ namespace BeeText
 
         private void hexBinaryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            HexToBinaryForm hexToBin = new HexToBinaryForm();
+            hexToBin.Show();
         }
 
         private void textBinaryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -456,6 +469,34 @@ namespace BeeText
             TextToBinaryForm txtBinaryForm = new TextToBinaryForm();
 
             txtBinaryForm.Show();
+        }
+
+        private void ıntegerTextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IntegerToTextForm intToTextForm = new IntegerToTextForm();
+
+            intToTextForm.Show();
+        }
+
+        private void textIntegerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextToIntegerForm txtToIntegerForm = new TextToIntegerForm();
+
+            txtToIntegerForm.Show();
+        }
+
+        private void binaryTextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BinaryToTextForm binToTxtForm = new BinaryToTextForm();
+
+            binToTxtForm.Show();
+        }
+
+        private void binaryHexToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BinarytoHexForm binToHexForm = new BinarytoHexForm();
+
+            binToHexForm.Show();
         }
     }
 }

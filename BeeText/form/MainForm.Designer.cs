@@ -52,6 +52,13 @@
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.convertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ıntegerTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textIntegerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.binaryTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBinaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hexBinaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.binaryHexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,13 +76,6 @@
             this.textBoxArea = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.convertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ıntegerTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textIntegerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.binaryTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBinaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hexBinaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.binaryHexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.SuspendLayout();
@@ -227,43 +227,98 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.selectAllToolStripMenuItem.Text = "Select All";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
+            // 
+            // convertToolStripMenuItem
+            // 
+            this.convertToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ıntegerTextToolStripMenuItem,
+            this.textIntegerToolStripMenuItem,
+            this.binaryTextToolStripMenuItem,
+            this.textBinaryToolStripMenuItem,
+            this.hexBinaryToolStripMenuItem,
+            this.binaryHexToolStripMenuItem});
+            this.convertToolStripMenuItem.Name = "convertToolStripMenuItem";
+            this.convertToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.convertToolStripMenuItem.Text = "Convert";
+            // 
+            // ıntegerTextToolStripMenuItem
+            // 
+            this.ıntegerTextToolStripMenuItem.Name = "ıntegerTextToolStripMenuItem";
+            this.ıntegerTextToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.ıntegerTextToolStripMenuItem.Text = "Integer -> Text";
+            this.ıntegerTextToolStripMenuItem.Click += new System.EventHandler(this.ıntegerTextToolStripMenuItem_Click);
+            // 
+            // textIntegerToolStripMenuItem
+            // 
+            this.textIntegerToolStripMenuItem.Name = "textIntegerToolStripMenuItem";
+            this.textIntegerToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.textIntegerToolStripMenuItem.Text = "Text -> Integer";
+            this.textIntegerToolStripMenuItem.Click += new System.EventHandler(this.textIntegerToolStripMenuItem_Click);
+            // 
+            // binaryTextToolStripMenuItem
+            // 
+            this.binaryTextToolStripMenuItem.Name = "binaryTextToolStripMenuItem";
+            this.binaryTextToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.binaryTextToolStripMenuItem.Text = "Binary -> Text";
+            this.binaryTextToolStripMenuItem.Click += new System.EventHandler(this.binaryTextToolStripMenuItem_Click);
+            // 
+            // textBinaryToolStripMenuItem
+            // 
+            this.textBinaryToolStripMenuItem.Name = "textBinaryToolStripMenuItem";
+            this.textBinaryToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.textBinaryToolStripMenuItem.Text = "Text -> Binary";
+            this.textBinaryToolStripMenuItem.Click += new System.EventHandler(this.textBinaryToolStripMenuItem_Click);
+            // 
+            // hexBinaryToolStripMenuItem
+            // 
+            this.hexBinaryToolStripMenuItem.Name = "hexBinaryToolStripMenuItem";
+            this.hexBinaryToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.hexBinaryToolStripMenuItem.Text = "Hex -> Binary";
+            this.hexBinaryToolStripMenuItem.Click += new System.EventHandler(this.hexBinaryToolStripMenuItem_Click);
+            // 
+            // binaryHexToolStripMenuItem
+            // 
+            this.binaryHexToolStripMenuItem.Name = "binaryHexToolStripMenuItem";
+            this.binaryHexToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.binaryHexToolStripMenuItem.Text = "Binary -> Hex";
+            this.binaryHexToolStripMenuItem.Click += new System.EventHandler(this.binaryHexToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -380,58 +435,7 @@
             this.textBoxArea.Size = new System.Drawing.Size(723, 619);
             this.textBoxArea.TabIndex = 1;
             // 
-            // convertToolStripMenuItem
-            // 
-            this.convertToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ıntegerTextToolStripMenuItem,
-            this.textIntegerToolStripMenuItem,
-            this.binaryTextToolStripMenuItem,
-            this.textBinaryToolStripMenuItem,
-            this.hexBinaryToolStripMenuItem,
-            this.binaryHexToolStripMenuItem});
-            this.convertToolStripMenuItem.Name = "convertToolStripMenuItem";
-            this.convertToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
-            this.convertToolStripMenuItem.Text = "Convert";
-            // 
-            // ıntegerTextToolStripMenuItem
-            // 
-            this.ıntegerTextToolStripMenuItem.Name = "ıntegerTextToolStripMenuItem";
-            this.ıntegerTextToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
-            this.ıntegerTextToolStripMenuItem.Text = "Integer -> Text";
-            // 
-            // textIntegerToolStripMenuItem
-            // 
-            this.textIntegerToolStripMenuItem.Name = "textIntegerToolStripMenuItem";
-            this.textIntegerToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
-            this.textIntegerToolStripMenuItem.Text = "Text -> Integer";
-            // 
-            // binaryTextToolStripMenuItem
-            // 
-            this.binaryTextToolStripMenuItem.Name = "binaryTextToolStripMenuItem";
-            this.binaryTextToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
-            this.binaryTextToolStripMenuItem.Text = "Binary -> Text";
-            // 
-            // textBinaryToolStripMenuItem
-            // 
-            this.textBinaryToolStripMenuItem.Name = "textBinaryToolStripMenuItem";
-            this.textBinaryToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
-            this.textBinaryToolStripMenuItem.Text = "Text -> Binary";
-            this.textBinaryToolStripMenuItem.Click += new System.EventHandler(this.textBinaryToolStripMenuItem_Click);
-            // 
-            // hexBinaryToolStripMenuItem
-            // 
-            this.hexBinaryToolStripMenuItem.Name = "hexBinaryToolStripMenuItem";
-            this.hexBinaryToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
-            this.hexBinaryToolStripMenuItem.Text = "Hex -> Binary";
-            this.hexBinaryToolStripMenuItem.Click += new System.EventHandler(this.hexBinaryToolStripMenuItem_Click);
-            // 
-            // binaryHexToolStripMenuItem
-            // 
-            this.binaryHexToolStripMenuItem.Name = "binaryHexToolStripMenuItem";
-            this.binaryHexToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
-            this.binaryHexToolStripMenuItem.Text = "Binary -> Hex";
-            // 
-            // BeeTextForm
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -441,7 +445,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "BeeTextForm";
+            this.Name = "MainForm";
             this.Text = "BeeText";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
