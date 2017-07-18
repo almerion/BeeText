@@ -35,6 +35,7 @@ namespace BeeText
             openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog.FilterIndex = 2;
             openFileDialog.RestoreDirectory = true;
+            openFileDialog.Title = "Open";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -54,6 +55,7 @@ namespace BeeText
             newFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             newFileDialog.FilterIndex = 2;
             newFileDialog.RestoreDirectory = true;
+            newFileDialog.Title = "New File";
 
             if(newFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -67,6 +69,7 @@ namespace BeeText
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
 
+            saveFileDialog.Title = "Save As...";
             saveFileDialog.InitialDirectory = "C:\\";
             saveFileDialog.Filter = "txtfiles (*.txt)|*txt|All files (*.*)|*.*";
             saveFileDialog.FilterIndex = 2;
@@ -498,5 +501,6 @@ namespace BeeText
 
             binToHexForm.Show();
         }
+
     }
 }

@@ -73,11 +73,16 @@
             this.encodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventLog1 = new System.Diagnostics.EventLog();
-            this.textBoxArea = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.newTab = new System.Windows.Forms.TabPage();
+            this.textBoxArea = new System.Windows.Forms.TextBox();
+            this.addTab = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
+            this.tabControl.SuspendLayout();
+            this.newTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -424,16 +429,48 @@
             // 
             this.eventLog1.SynchronizingObject = this;
             // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.newTab);
+            this.tabControl.Controls.Add(this.addTab);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl.Location = new System.Drawing.Point(0, 28);
+            this.tabControl.Multiline = true;
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(723, 619);
+            this.tabControl.TabIndex = 3;
+            // 
+            // newTab
+            // 
+            this.newTab.Controls.Add(this.textBoxArea);
+            this.newTab.Location = new System.Drawing.Point(4, 25);
+            this.newTab.Name = "newTab";
+            this.newTab.Padding = new System.Windows.Forms.Padding(3);
+            this.newTab.Size = new System.Drawing.Size(715, 590);
+            this.newTab.TabIndex = 1;
+            this.newTab.Text = "New Tab";
+            this.newTab.UseVisualStyleBackColor = true;
+            // 
             // textBoxArea
             // 
-            this.textBoxArea.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBoxArea.Location = new System.Drawing.Point(0, 28);
+            this.textBoxArea.Location = new System.Drawing.Point(3, 3);
             this.textBoxArea.Multiline = true;
             this.textBoxArea.Name = "textBoxArea";
-            this.textBoxArea.Size = new System.Drawing.Size(723, 619);
-            this.textBoxArea.TabIndex = 1;
+            this.textBoxArea.Size = new System.Drawing.Size(709, 584);
+            this.textBoxArea.TabIndex = 0;
+            // 
+            // addTab
+            // 
+            this.addTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.addTab.Location = new System.Drawing.Point(4, 25);
+            this.addTab.Name = "addTab";
+            this.addTab.Padding = new System.Windows.Forms.Padding(3);
+            this.addTab.Size = new System.Drawing.Size(715, 590);
+            this.addTab.TabIndex = 2;
+            this.addTab.Text = "+";
+            this.addTab.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -441,7 +478,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(723, 647);
-            this.Controls.Add(this.textBoxArea);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -450,6 +487,9 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
+            this.tabControl.ResumeLayout(false);
+            this.newTab.ResumeLayout(false);
+            this.newTab.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,7 +507,6 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Diagnostics.EventLog eventLog1;
-        private System.Windows.Forms.TextBox textBoxArea;
         private System.Windows.Forms.ToolStripMenuItem fullScreenToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
@@ -504,5 +543,9 @@
         private System.Windows.Forms.ToolStripMenuItem textBinaryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hexBinaryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem binaryHexToolStripMenuItem;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage newTab;
+        private System.Windows.Forms.TabPage addTab;
+        private System.Windows.Forms.TextBox textBoxArea;
     }
 }
