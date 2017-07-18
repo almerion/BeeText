@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Security;
+using BeeText.form;
 
 namespace BeeText
 {
-    public partial class BeeTextForm : Form
+    public partial class MainForm : Form
     {
+        
 
-        public BeeTextForm()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -183,6 +185,7 @@ namespace BeeText
             textBoxArea.SelectAll();
             textBoxArea.Focus();
         }
+        #region Themes
 
         private void matrixToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -198,7 +201,9 @@ namespace BeeText
             textBoxArea.BackColor = Color.Black;
             textBoxArea.ForeColor = Color.White;
         }
+        #endregion Themes
 
+        #region GermanLanguage
         private void germanToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //beetext
@@ -234,7 +239,9 @@ namespace BeeText
             //about
             this.aboutToolStripMenuItem.Text = "Über";
         }
+        #endregion GermanLanguage
 
+        #region FrenchLanguage
         private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //beetext
@@ -271,7 +278,10 @@ namespace BeeText
             this.aboutToolStripMenuItem.Text = "Sur";
             
         }
+        #endregion FrenchLanguage
 
+        #region italianoLanguage
+    
         private void ıtalianoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //beetext
@@ -308,6 +318,9 @@ namespace BeeText
             this.aboutToolStripMenuItem.Text = "Di";
         }
 
+        #endregion ItalianoLanguage
+
+        #region EspanolLanguage
         private void españolToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //beetext
@@ -344,6 +357,10 @@ namespace BeeText
             this.aboutToolStripMenuItem.Text = "Sobre";
         }
 
+        #endregion EspanolLanguage
+
+        #region TurkceLanguage
+
         private void sdafToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //beetext
@@ -379,7 +396,9 @@ namespace BeeText
             //about
             this.aboutToolStripMenuItem.Text = "Hakkında";
         }
+        #endregion
 
+        #region EnglishLanguage
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //beetext
@@ -415,6 +434,8 @@ namespace BeeText
             //about
             this.aboutToolStripMenuItem.Text = "About";
         }
+        #endregion EnglishLanguage
+
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -423,6 +444,18 @@ namespace BeeText
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void hexBinaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBinaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextToBinaryForm txtBinaryForm = new TextToBinaryForm();
+
+            txtBinaryForm.Show();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace BeeText
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BeeTextForm());
+            Application.Run(new MainForm());
         }
     }
 }

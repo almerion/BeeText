@@ -45,6 +45,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="form\BinarytoHexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\BinarytoHexForm.Designer.cs">
+      <DependentUpon>BinarytoHexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\BinaryToTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\BinaryToTextForm.Designer.cs">
+      <DependentUpon>BinaryToTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\HexToBinaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\HexToBinaryForm.Designer.cs">
+      <DependentUpon>HexToBinaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\IntegerToTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\IntegerToTextForm.Designer.cs">
+      <DependentUpon>IntegerToTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\TextToBinaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\TextToBinaryForm.Designer.cs">
+      <DependentUpon>TextToBinaryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\SearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,8 +87,17 @@
     <Compile Include="form\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\TextToIntegerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\TextToIntegerForm.Designer.cs">
+      <DependentUpon>TextToIntegerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="form\TextToBinaryForm.resx">
+      <DependentUpon>TextToBinaryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\SearchForm.resx">
       <DependentUpon>SearchForm.cs</DependentUpon>
     </EmbeddedResource>
