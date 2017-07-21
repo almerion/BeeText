@@ -10,12 +10,12 @@ using System.Windows.Forms;
 using System.IO;
 using System.Security;
 using BeeText.form;
+using BeeText.MenuAct;
 
 namespace BeeText
 {
     public partial class MainForm : Form
     {
-        
 
         public MainForm()
         {
@@ -463,43 +463,53 @@ namespace BeeText
 
         private void hexBinaryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HexToBinaryForm hexToBin = new HexToBinaryForm();
-            hexToBin.Show();
+            using (HexToBinaryForm hexToBin = new HexToBinaryForm())
+            {
+                hexToBin.Show();
+            }
+                
         }
 
         private void textBinaryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TextToBinaryForm txtBinaryForm = new TextToBinaryForm();
+            using (TextToBinaryForm txtBinaryForm = new TextToBinaryForm())
+            {
+                txtBinaryForm.Show();
+            }
 
-            txtBinaryForm.Show();
+                
         }
 
         private void ıntegerTextToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IntegerToTextForm intToTextForm = new IntegerToTextForm();
-
-            intToTextForm.Show();
+            using (IntegerToTextForm intToTextForm = new IntegerToTextForm())
+            {
+                intToTextForm.Show();
+            }   
         }
 
         private void textIntegerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TextToIntegerForm txtToIntegerForm = new TextToIntegerForm();
-
-            txtToIntegerForm.Show();
+            using (TextToIntegerForm txtToIntegerForm = new TextToIntegerForm())
+            {
+                txtToIntegerForm.Show();
+            }
         }
 
         private void binaryTextToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BinaryToTextForm binToTxtForm = new BinaryToTextForm();
-
-            binToTxtForm.Show();
+            using (BinaryToTextForm binToTxtForm = new BinaryToTextForm())
+            {
+                binToTxtForm.Show();
+            }
         }
 
         private void binaryHexToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BinarytoHexForm binToHexForm = new BinarytoHexForm();
-
-            binToHexForm.Show();
+            using (BinarytoHexForm binToHexForm = new BinarytoHexForm())
+            {
+                binToHexForm.Show();
+            }
         }
 
     }

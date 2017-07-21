@@ -546,6 +546,6 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage newTab;
         private System.Windows.Forms.TabPage addTab;
-        private System.Windows.Forms.TextBox textBoxArea;
+        public System.Windows.Forms.TextBox textBoxArea;
     }
 }
